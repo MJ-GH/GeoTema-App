@@ -60,7 +60,7 @@ namespace GeoTema_App
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Dashboard";
-            this.Text = "Form1";
+            this.Text = "GeoTema - Login";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GeoTemaPic)).EndInit();
             this.ResumeLayout(false);
