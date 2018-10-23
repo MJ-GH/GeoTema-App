@@ -23,6 +23,7 @@ namespace GeoTema_App
         private void Dashboard_Load(object sender, EventArgs e)
         {
 
+
         }
 
     }
