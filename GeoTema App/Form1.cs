@@ -22,9 +22,12 @@ namespace GeoTema_App
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
-
+            
         }
 
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

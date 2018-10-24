@@ -34,6 +34,7 @@ namespace GeoTema_App
             this.BrugernavnLabel = new System.Windows.Forms.Label();
             this.KodeordLabel = new System.Windows.Forms.Label();
             this.KodeordBox = new System.Windows.Forms.TextBox();
+            this.LoginButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GeoTemaPic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +62,6 @@ namespace GeoTema_App
             // 
             // BrugernavnLabel
             // 
-            this.BrugernavnLabel.AutoSize = true;
             this.BrugernavnLabel.BackColor = System.Drawing.Color.Transparent;
             this.BrugernavnLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BrugernavnLabel.Location = new System.Drawing.Point(45, 120);
@@ -69,13 +69,14 @@ namespace GeoTema_App
             this.BrugernavnLabel.Size = new System.Drawing.Size(115, 26);
             this.BrugernavnLabel.TabIndex = 2;
             this.BrugernavnLabel.Text = "Brugernavn:";
+            this.BrugernavnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // KodeordLabel
             // 
             this.KodeordLabel.AutoSize = true;
             this.KodeordLabel.BackColor = System.Drawing.Color.Transparent;
             this.KodeordLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KodeordLabel.Location = new System.Drawing.Point(298, 120);
+            this.KodeordLabel.Location = new System.Drawing.Point(45, 185);
             this.KodeordLabel.Name = "KodeordLabel";
             this.KodeordLabel.Size = new System.Drawing.Size(90, 26);
             this.KodeordLabel.TabIndex = 3;
@@ -83,11 +84,23 @@ namespace GeoTema_App
             // 
             // KodeordBox
             // 
-            this.KodeordBox.Location = new System.Drawing.Point(303, 149);
+            this.KodeordBox.Location = new System.Drawing.Point(50, 214);
             this.KodeordBox.Name = "KodeordBox";
             this.KodeordBox.PasswordChar = '*';
             this.KodeordBox.Size = new System.Drawing.Size(174, 20);
             this.KodeordBox.TabIndex = 4;
+            // 
+            // LoginButton
+            // 
+            this.LoginButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginButton.Location = new System.Drawing.Point(50, 260);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(75, 23);
+            this.LoginButton.TabIndex = 5;
+            this.LoginButton.Text = "LOG IND";
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // Dashboard
             // 
@@ -97,6 +110,7 @@ namespace GeoTema_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(609, 336);
+            this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.KodeordBox);
             this.Controls.Add(this.KodeordLabel);
             this.Controls.Add(this.BrugernavnLabel);
@@ -120,6 +134,7 @@ namespace GeoTema_App
         private System.Windows.Forms.Label KodeordLabel;
         private System.Windows.Forms.TextBox KodeordBox;
         private System.Windows.Forms.TextBox BrugernavnBox;
+        private System.Windows.Forms.Button LoginButton;
     }
 }
 
