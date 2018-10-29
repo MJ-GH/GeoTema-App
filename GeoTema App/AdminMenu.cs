@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GeoTema_App
 {
-    public partial class Form2 : Form
+    public partial class AdminMenu : Form
     {
-        public Form2()
+        public AdminMenu()
         {
             InitializeComponent();
         }
