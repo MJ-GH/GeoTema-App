@@ -22,42 +22,36 @@ namespace GeoTema_App
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+            panelAdmin.Visible = false;
+            panelDashboard.Visible = true;
         }
 
-        private void LoginButton_Click(object sender, EventArgs e)
+        private void LogIndKnap_Click(object sender, EventArgs e)
         {
-
-
             if (BrugernavnBox.Text == "Administrator" && KodeordBox.Text == "Passw0rd!")
             {
 
 
-                this.Hide();
-                Form AdminMenu = new Form();
-                AdminMenu.Show();
+                panelAdmin.Visible = true;
+
+
             }
             else if (BrugernavnBox.Text == "Superbruger" && KodeordBox.Text == "Passw0rd!")
             {
 
 
-                this.Hide();
-                Form SuperbrugerMenu = new Form();
-                SuperbrugerMenu.Show();
+
             }
             else if (BrugernavnBox.Text == "Standardbruger" && KodeordBox.Text == "Passw0rd!")
             {
 
 
-                this.Hide();
-                Form StandardbrugerMenu = new Form();
-                StandardbrugerMenu.Show();
+
             }
             else
             {
                 MessageBox.Show("Forkert brugernavn eller kodeord - prøv igen!");
             }
-
         }
     }
 }
